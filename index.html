@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Raynov's webpage</title>
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <link rel="stylesheet" type="text/css" href="styles/responsible-style.css">
+    <link rel="icon" href="photos/vr_logo_small.png">
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+</head>
+
+<body>
+    <!--Go to top-->
+    <button onclick="topFunction()" id="topBtn" title="Go to top">▲</button>
+    <!--Navigation-->
+    <section class="section-navigation ">
+        <div class="l-c-options">
+            <p>Test</p>
+        </div>
+        <div class="navigation">
+            <a href="index.html"><img class="logo" src="./photos/vr_logo.png" alt=""></a>
+
+
+            <div id="a-navigation">
+                <a href="index.html#about-me">About me</a>
+                <a href="index.html#mywork-id">My work</a>
+                <a href="index.html#contact-me">Contacts</a>
+            </div>
+        </div>
+
+        <div id="hSidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="index.html"><img src="photos/vr_logo.png" alt="Logo" class="hamburger-img" /></a>
+            <a href="index.html#about-me" class="hamburger-a">Car Photography</a>
+            <a href="index.html#mywork-id" class="hamburger-a">Videos</a>
+            <a href="index.html#contact-me" class="hamburger-a">Portraits</a>
+
+        </div>
+        <div id="main">
+            <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+        </div>
+
+
+        <!-- Intro -->
+        <div class="intro-wrapper">
+            <div class="left-column">
+                <p class="intro-text">Hello,</p>
+                <p class="intro-text">I'm <a id="wordVictor">Victor</a></p>
+                <p class="intro-text-h4"> welcome to my page
+
+                </p>
+                <div class="icon-scroll">
+                    <div class="icon-arrows">
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="right-column">
+                <img id="my-photo" src="./photos/my_avatar.jpg" />
+            </div>
+        </div>
+
+    </section>
+    <div class="spacer">
+    </div>
+
+    <!-- About me-->
+    <section id="about-me" class="about-me headline">
+        <div class="aboutme-wrapper">
+            <p class="intro-text aboutme-label"><ins>About me </ins> </p>
+            <div class="aboutme-photo">
+                <img src="./photos/aboutme2.jpg" id="aboutme_photo" />
+            </div>
+            <div class="aboutme-text">
+                <p id="aboutme-p">Hello, My name is Victor Raynov. <br><br> I'm a final year student at Technical University of Varna with major at Software and Internet Techonologies. I'm interested in Frontend development, Web design and editing with Photoshop.
+
+                    <br><br> I'm responsible, fast learner and motivated to learn more and more.<br>
+                    <br> I have graduated Languages school and I speak English and French. In 2019, I was on student brigade Work and Travel in USA, where I improved my speech and my communication because my job was related with customer services.
+                    <br> I hope you find me interesting and if you want to learn more about me - contact me anytime.
+
+
+                </p>
+            </div>
+            <div class="aboutme-social headline">
+                <p id="followmetext"> Visit my social network:</p>
+                <a target="_blank" href="https://www.facebook.com/viktor.raynov/"><img src="https://image.flaticon.com/icons/png/128/1384/1384005.png" alt="facebook" class="social-icon"></a>
+                <a target="_blank" href="https://www.instagram.com/vicraynov/"> <img src="https://image.flaticon.com/icons/png/128/1384/1384015.png" alt="instagram" class="social-icon"></a>
+                <a target="_blank" href="https://www.linkedin.com/in/viktor-raynov-9036b91ab/"><img src="https://image.flaticon.com/icons/png/128/1384/1384014.png" alt="linkedin" class="social-icon"></a>
+
+            </div>
+        </div>
+        <div class="skills-div ">
+
+            <div class="showmore-button-div">
+                <pre> <a onclick="showMoreFunction()" class="showskills-button" id="skillst" >Skills ▼</a></pre>
+            </div>
+            <div class="show-more hidden-menu">
+                <table class="table">
+                    <span class="skill-span"><tr>    
+                <th class="th2"><img src="./photos/icon/html.png" class="skills-icon" alt="html"></th>
+                <th><p>HTML5</p></th>
+                <th></th>
+                <th class="th2"><img src="./photos/icon/css.png" class="skills-icon" alt="CSS3"></th>
+                    <th ><p>CSS3</p></th> 
+            </tr></span>
+
+                    <span class="skills-span">
+                        <tr>
+              <th class="th2">  <img src="./photos/icon/js.png" class="skills-icon" alt="JS"></th>
+                <th><p>JavaScript</p></th>
+                <th></th>
+                <th class="th2"><img src="./photos/icon/angular.png" class="skills-icon" alt="Amgular"></th> 
+                <th ><p>Angular</p></th>
+            </tr>
+                </span>
+
+                    <span class="skill-span"><tr>    
+                <th class="th2"><img src="./photos/icon/ps.png" class="skills-icon" alt="Photoshop"></th>
+                <th><p>Photoshop</p></th>
+                <th></th>
+                <th class="th2"><img src="./photos/icon/video.png" class="skills-icon" alt="SV"></th>
+                <th ><p>Sony Vegas Pro</p></th>
+            </tr></span>
+
+                    <span class="skill-span"><tr>    
+                <th class="th2"><img src="./photos/icon/java.png" class="skills-icon" alt="Java"></th>
+                <th><p>Basic Java</p></th>
+                <th></th>
+                <th class="th2"><img src="./photos/icon/lang.png" class="skills-icon" alt="Languages"></th>
+                <th ><p>English/French</p></th>
+            </tr></span>
+
+                </table>
+            </div>
+
+            <!-- Second dropdown option-->
+            <div class="showmore-button-div">
+                <pre> <a onclick="showMoreFunction()" class="showhobby-button" id="skillst" >Interests ▼</a></pre>
+            </div>
+            <div class="show-more-h hidden-menu">
+                <table class="table">
+                    <span class="skill-span"><tr>    
+                <th class="th1"><img src="./photos/icon/car.png" class="skills-icon" alt="html"></th>
+                <th><p>Everything Car Related</p></th> 
+            </tr></span>
+
+                    <span class="skills-span">
+                        <tr>
+              <th class="th1">  <img src="./photos/icon/road.png" class="skills-icon" alt="JS"></th>
+                <th><p>Love Traveling/Driving</p></th>
+                
+            </tr>
+                </span>
+
+                    <span class="skills-span">
+                    <tr>
+          <th class="th1">  <img src="./photos/icon/programing.png" class="skills-icon" alt="JS"></th>
+            <th><p>Web design/Frontend</p></th>
+            
+        </tr>
+            </span>
+                    <tr>
+                        <th class="th1"> <img src="./photos/icon/phone.png" class="skills-icon" alt="JS"></th>
+                        <th>
+                            <p>Smartphone Technologies</p>
+                        </th>
+
+                    </tr>
+                    </span>
+                    <span class="skill-span"><tr>    
+                <th class="th1"><img src="./photos/icon/edit.png" class="skills-icon" alt="Photoshop"></th>
+                <th><p>Editing photos</p></th>
+                
+            </tr></span>
+
+                    <span class="skills-span">
+               
+
+                </table>
+            </div>
+            <p class="cv-text headline"> If you are looking at this website, you probably already have my CV, right? <br> But if you don't, <a href="index.html#contact-me">contact me</a> and I will send it to you.</p>
+
+        </div>
+    </section>
+
+    
+
+    <section class="mywork-section headline">
+        <div class="mywork-wrapper">
+       
+           <div class="spacer">
+    </div> 
+    <p class="intro-text mywork-label"  id="mywork-id"><ins>My work</ins> </p>
+            <div class="mywork-category">
+                <div class="category_container">
+                <a href="web_design.html"><img src="photos/mw_webdev.jpg" alt="" class="image-cat"></a>
+                <div class="overlay">Web Dev</div>
+            </div>
+            <div class="category_container">
+               <a href="photoshop_stuff.html"> <img src="photos/mw_ps.jpg" alt="" class="image-cat"></a>
+                <div class="overlay">Photoshop work</div>
+                </div>
+            </div>
+            <p class="cv-text">Click above to choose a category</p>
+        </div>
+    </section>
+
+<div class="spacer"></div>
+    <section class="contact-section headline" id="contact-me">
+        <p class="intro-text mywork-label"><ins>Contact me</ins> </p>
+
+        <form method="POST" action="https://formspree.io/f/moqyagaq" class="form-container" id="bookForm">
+
+            <p class="cv-text">Enter your details</p>
+            <label for="name"><b>Full name:</b></label>
+            <input type="text" placeholder="Enter your name" name="Name" required>
+
+            <label for="email"><b>Email:</b></label>
+            <input type="text" placeholder="Enter your email" name="email" required>
+
+            <label for="City"><b>City:</b></label>
+            <input type="text" placeholder="Enter your city" name="city" required>
+
+            <label for="subject"><b>Question:</b></label>
+            <textarea class="text-area-qusetion" name="subject" placeholder="Write your question.." style="height:150px"></textarea>
+
+            <button type="submit" class="btn" onclick="sendEmail()">Send</button>
+
+        </form>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-div">
+            <p class="footer-p">Thank you for<br> visiting my website!
+            </p>
+           
+    </footer>
+
+    <script src="/node_modules/jquery/dist/jquery.min.js "></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.showskills-button').click(function() {
+                $('.show-more').slideToggle("slow ");
+            });
+        });
+        $(document).ready(function() {
+            $('.showhobby-button').click(function() {
+                $('.show-more-h').slideToggle("slow ");
+            });
+        })
+    </script>
+    <script>
+        ScrollReveal().reveal('.headline', {
+            delay: 300
+        });
+    </script>
+    <script src="./JavaScript/main.js"></script>
+</body>
+
+</html>
