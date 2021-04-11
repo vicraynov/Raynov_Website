@@ -1,0 +1,12 @@
+:root {
+    --mainText: rgb(255, 255, 255);
+    --secondaryText: #ffffff;
+    --background-color: #124b5c;
+    --text-color: #000;
+    --background-image: url("../photos/wave-effect-b2.jpg");
+    --victor-color: rgb(0, 162, 202);
+    --wave: url("../photos/wave-effect-b2-reverse.jpg");
+    --theme-mode: rgb(0, 0, 0);
+    --project-color: #1b3c46;
+    --a-color: rgb(86, 155, 120);
+}

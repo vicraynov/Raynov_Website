@@ -9,6 +9,7 @@
     <link rel="stylesheet" type="text/css" href="styles/style.css">
     <link rel="stylesheet" type="text/css" href="styles/responsible-style.css">
     <link rel="icon" href="photos/vr_logo_small.png">
+    <link id="theme-style" rel="stylesheet" type="text/css" href="">
     <script src="https://unpkg.com/scrollreveal"></script>
 
 </head>
@@ -18,9 +19,17 @@
     <button onclick="topFunction()" id="topBtn" title="Go to top">▲</button>
     <!--Navigation-->
     <section class="section-navigation ">
-        <div class="l-c-options">
-            <p>Test</p>
+        <!-- Change Color Option-->
+        <div id="theme-options-wrapper">
+            <div id="theme_text">
+                <p id="theme_mode" style="color: black;"> Theme mode:</p>
+            </div>
+            <div data-mode="light" id="light-mode" class="theme-dot"></div>
+            <div data-mode="blue" id="blue-mode" class="theme-dot"></div>
+            <div data-mode="green" id="green-mode" class="theme-dot"></div>
+
         </div>
+
         <div class="navigation">
             <a href="index.html"><img class="logo" src="./photos/vr_logo.png" alt=""></a>
 
@@ -261,6 +270,7 @@
         });
     </script>
     <script src="./JavaScript/main.js"></script>
+    <script src="./JavaScript/theme_changer.js"></script>
 </body>
 
 </html>

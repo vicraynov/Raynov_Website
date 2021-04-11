@@ -9,7 +9,9 @@
     <link rel="stylesheet" type="text/css" href="styles/style.css">
     <link rel="stylesheet" type="text/css" href="styles/responsible-style.css">
     <link rel="icon" href="photos/vr_logo_small.png">
+    <link id="theme-style" rel="stylesheet" type="text/css" href="">
     <script src="https://unpkg.com/scrollreveal"></script>
+
 </head>
 
 <body>
@@ -17,8 +19,15 @@
     <button onclick="topFunction()" id="topBtn" title="Go to top">▲</button>
     <!--Navigation-->
     <section class="section-navigation ">
-        <div class="l-c-options">
-            <p>Test</p>
+        <!-- Change Color Option-->
+        <div id="theme-options-wrapper">
+            <div id="theme_text">
+                <p id="theme_mode" style="color: black;"> Theme mode:</p>
+            </div>
+            <div data-mode="light" id="light-mode" class="theme-dot"></div>
+            <div data-mode="blue" id="blue-mode" class="theme-dot"></div>
+            <div data-mode="green" id="green-mode" class="theme-dot"></div>
+
         </div>
         <div class="navigation">
             <a href="index.html"><img class="logo" src="./photos/vr_logo.png" alt=""></a>
@@ -51,14 +60,45 @@
         </div>
 
         <section class="stuff_section">
-            <div class="project_example">
+            <div class="project_example headline">
                 <img src="./photos/elv_project.jpg" alt="" class="project_image" />
-                <p>Elvade Photography Project</p>
+                <p class="project_title">Elvade Media Project</p>
+
+                <a target="_blank" href="https://github.com/vicraynov/elvade_website_roject">Source code</a>
+                <p>Test on a free host:</p>
+                <a target="_blank" href="http://fursty.free.bg">fursty.free.bg</a>
+            </div>
+
+            <div class="project_example headline">
+                <img src="./photos/vd_project.jpg" alt="" class="project_image" />
+                <p class="project_title">V&D Real Estate Project</p>
+                <p class="project_more">Univeristy project for a real estate agency</p>
+                <a target="_blank" href="https://github.com/vicraynov/VD_RealEstate_Project">Source code</a>
+
+            </div>
+
+            <div class="project_example headline">
+                <img src="./photos/drivably_project.jpg" alt="" class="project_image" />
+                <p class="project_title">Drivably Clothes Brand</p>
+                <p class="project_more">E-commerce website still in progress </p>
+
 
             </div>
         </section>
 
+        <footer class="footer">
+            <div class="footer-div">
+                <p class="footer-p">Thank you for<br> visiting my website!
+                </p>
 
+        </footer>
+        <script>
+            ScrollReveal().reveal('.headline', {
+                delay: 300
+            });
+        </script>
+        <script src="./JavaScript/main.js"></script>
+        <script src="./JavaScript/theme_changer.js"></script>
 </body>
 
 </html>
